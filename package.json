@@ -1,0 +1,33 @@
+{
+  "name": "sellbot",
+  "version": "1.0.0",
+  "description": "signals for buy and sell cryptos",
+  "author": "Marco Dali <marco@durazno.io>",
+  "contributors": [],
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": "^12 || ^14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/marcodali/cryptotraderp2p.git"
+  },
+  "type": "module",
+  "scripts": {
+    "sell": "nodemon --experimental-modules sellBot.js"
+  },
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.1.0",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "nodemon": "^2.0.4"
+  }
+}
